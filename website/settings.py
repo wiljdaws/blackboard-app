@@ -39,12 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'crispy_forms',
-    'crispy_bootstrap5'
+    'crispy_bootstrap4'
 ]
+    
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = ['bootstrap4']
 
-CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,11 +84,11 @@ WSGI_APPLICATION = 'website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dc9g2r54h66j0g',
-        'USER': 'enhtpcpdjxgnfm',
-        'PASSWORD': '0b89b9c49d4ac58b503754c3eb90ddc0999468445ffbb2abb695295e3db78cea',
-        'HOST': 'ec2-3-209-61-239.compute-1.amazonaws.com',
-        'PORT': '5432'
+        'NAME': 'dallascollege',
+        'USER': 'wiljdaws',
+        'PASSWORD': 'dallascollege123',
+        'HOST': 'dallas-college.cbuws4s4i0yt.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 

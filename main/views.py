@@ -37,7 +37,7 @@ def home(request):
 
 
 @login_required(login_url="/login")
-@permission_required("main.add_post", login_url="/login", raise_exception=True)
+# @permission_required("main.add_post", login_url="/login", raise_exception=True)
 def create_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
